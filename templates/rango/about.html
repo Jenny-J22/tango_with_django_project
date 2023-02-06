@@ -16,17 +16,15 @@
 
 		<div>
 			<a href="/rango/">Index</a><br />
-			<img src="{% static 'images/rango.jpg' %}"
-				alt="Picture of Rango"/>
-		
+			<img src="{% static 'images/rango.jpg' %}" alt="Picture of Rango" />
+			<!-- img src=\"{settings.STATIC_URL}images/rango.jpg\" alt=\"Picture of Rango\" / -->
 		</div> 
 		
-	
 		<br/>
 		<div>
 	
-			<img src="/media/cat.jpg"
-				alt="Picture of a Cat"/>
+			<img src="/media/cat.jpg" alt="Picture of a Cat." />
+			<!-- img src=\"{settings.MEDIA_URL}cat.jpg\" alt=\"Picture of a Cat.?\" / -->
 		</div> 
 	
 	</body>

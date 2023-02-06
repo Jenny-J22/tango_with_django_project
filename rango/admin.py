@@ -8,13 +8,7 @@ class ChoiceInline(admin.TabularInline):
 
 
 class CategoryAdmin(admin.ModelAdmin):
-	
-	fieldsets = [
-		(None,		{'fields': ['name']}),
-		('info',	{'fields': ['views', 'likes']}),
-	]
-	inlines = [ChoiceInline]
-	list_display = ('name', 'views', 'likes')
+	prepopulated_fields = {'slug':('name',)}
 
 
 
